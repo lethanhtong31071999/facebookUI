@@ -49,6 +49,9 @@ input:focus::placeholder {
     left: 0 !important;
     width: 100% !important;
   }
+  .dropdown-menu__main-menu {
+    width: 20em !important;
+  }
 }
 
 @media (min-width: 992px) {

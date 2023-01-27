@@ -42,6 +42,7 @@ input:focus::placeholder {
 
   border-bottom: 3px solid #0d6efd !important;
 }
+
 @media (max-width: 577px) {
   .dropdown-menu-mobile {
     position: fixed !important;

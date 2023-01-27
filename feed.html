@@ -929,7 +929,12 @@
                 </div>
               </li>
               <!-- message 1 -->
-              <li class="my-2 p-1" type="button">
+              <li
+                class="my-2 p-1"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#singleChat1"
+              >
                 <div class="d-flex align-items-center justify-content-between">
                   <!-- big avt -->
                   <div class="d-flex align-items-center justify-content-evenly">
@@ -1058,6 +1063,236 @@
           </div>
           <!-- footer -->
           <div class="modal-footer border-0" style="min-height: 300px"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Single Chat 1 -->
+    <div
+      class="modal fade"
+      id="singleChat1"
+      tabindex="-1"
+      aria-labelledby="singleChat1Label"
+      aria-hidden="true"
+      data-bs-backdrop="false"
+    >
+      <div
+        class="modal-dialog modal-sm position-absolute bottom-0 end-0 w-75"
+        style="transform: translateX(-80px)"
+      >
+        <div class="modal-content border-0 shadow">
+          <!-- head -->
+          <div class="modal-header">
+            <div
+              class="dropdown-item d-flex rounded"
+              style="cursor: pointer"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="left"
+              data-bs-html="true"
+              data-bs-content='
+              <div class="w-100" >
+                <div class="popover-inner d-flex flex-column p-0">
+                  <div class="d-flex align-items-center dropdown-item p-2 rounded">
+                    <i class="far fa-comment me-3 fs-4"></i>
+                    <p class="m-0">Open Messenger</p>
+                  </div>
+                  <div class="d-flex align-items-center dropdown-item p-2 rounded">
+                    <i class="far fa-user me-3 fs-4"></i>
+                    <p class="m-0">User Profile</p>
+                  </div>
+                  <div class="d-flex align-items-center dropdown-item p-2 rounded">
+                    <i class="fa-solid fa-display me-3 fs-4"></i>
+                    <p class="m-0">Download Messenger</p>
+                  </div>                  
+                  <hr />
+                  <div class="d-flex align-items-center dropdown-item p-2 rounded">
+                    <i class="fa-regular fa-face-smile me-3 fs-4"></i>
+                    <p class="m-0">Change emotion</p>
+                  </div>    
+                  <div class="d-flex align-items-center dropdown-item p-2 rounded">
+                    <i class="fa-solid fa-pen me-3 fs-4"></i>
+                    <p class="m-0">Nick Name</p>
+                  </div>    
+                  <hr />        
+                  <div class="d-flex align-items-center dropdown-item p-2 rounded">
+                    <i class="fa-solid fa-user-group me-3 fs-4"></i>
+                    <p class="m-0">Create Group</p>
+                  </div>  
+                  <hr />
+                  <div class="d-flex align-items-center dropdown-item p-2 rounded">
+                    <i class="fa-regular fa-bell me-3 fs-4"></i>
+                    <p class="m-0">Turn Off Notification</p>
+                  </div>  
+                  <hr />
+                  <div class="d-flex align-items-center dropdown-item p-2 rounded">
+                    <i class="fa-regular fa-trash-can me-3 fs-4"></i>
+                    <p class="m-0">Remove Chat</p>
+                  </div>       
+                  <div class="d-flex align-items-center dropdown-item p-2 rounded">
+                    <i class="fa-solid fa-triangle-exclamation me-3 fs-4"></i>
+                    <p class="m-0">Report</p>
+                  </div>                
+                </div>
+              </div>'
+            >
+              <!-- avatar -->
+              <div class="position-relative">
+                <img
+                  src="https://source.unsplash.com/random/1"
+                  alt="avatar"
+                  class="rounded-circle me-2"
+                  style="width: 38px; height: 38px; object-fit: cover"
+                />
+                <span
+                  class="position-absolute bottom-0 end-0 translate-middle bg-success border border-light rounded-circle p-1"
+                ></span>
+                <span class="visually-hidden"></span>
+              </div>
+              <!-- name -->
+              <div>
+                <p class="m-0">
+                  Mike
+                  <i class="fas fa-angle-down ms-1"></i>
+                </p>
+                <span class="text-muted fs-7">Active Now</span>
+              </div>
+            </div>
+            <!-- buttons -->
+            <div class="d-flex justify-content-end">
+              <i class="fas fa-video mx-2 text-muted" type="button"></i>
+              <i class="fas fa-phone-alt mx-2 text-muted" type="button"></i>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+          <!-- body -->
+          <div class="modal-body overflow-auto" style="max-height: 300px">
+            <ul class="list-group m-0 p-0">
+              <!-- message left 1 -->
+              <li
+                class="list-group-item border-0 m-0 p-0 d-flex justify-content-start"
+              >
+                <div class="w-75 d-flex">
+                  <!-- avt -->
+                  <div>
+                    <img
+                      src="https://source.unsplash.com/random/1"
+                      alt="avatar"
+                      class="rounded-circle me-2"
+                      style="width: 28px; height: 28px; object-fit: cover"
+                    />
+                  </div>
+                  <!-- message -->
+                  <p class="bg-gray p-2 rounded">Lorem, ipsum dolor.</p>
+                </div>
+              </li>
+              <!-- message right 1 -->
+              <li
+                class="list-group-item border-0 m-0 p-0 d-flex justify-content-end"
+              >
+                <div class="w-75 d-flex">
+                  <!-- avt -->
+                  <div class="order-2">
+                    <img
+                      src="https://source.unsplash.com/collection/happy-people"
+                      alt="avatar"
+                      class="rounded-circle ms-2"
+                      style="width: 28px; height: 28px; object-fit: cover"
+                    />
+                  </div>
+                  <!-- message -->
+                  <p class="bg-primary-subtle p-2 rounded">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quisquam dolor culpa expedita itaque nihil quo?
+                  </p>
+                </div>
+              </li>
+              <!-- message left 2 -->
+              <li
+                class="list-group-item border-0 m-0 p-0 d-flex justify-content-start"
+              >
+                <div class="w-75 d-flex">
+                  <!-- avt -->
+                  <div>
+                    <img
+                      src="https://source.unsplash.com/random/1"
+                      alt="avatar"
+                      class="rounded-circle me-2"
+                      style="width: 28px; height: 28px; object-fit: cover"
+                    />
+                  </div>
+                  <!-- message -->
+                  <p class="bg-gray p-2 rounded">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Eveniet nesciunt, corporis harum ea veritatis temporibus
+                    explicabo recusandae! Accusamus, doloremque quas?
+                  </p>
+                </div>
+              </li>
+              <!-- message right 2 -->
+              <li
+                class="list-group-item border-0 m-0 p-0 d-flex justify-content-end"
+              >
+                <div class="w-75 d-flex">
+                  <!-- avt -->
+                  <div class="order-2">
+                    <img
+                      src="https://source.unsplash.com/collection/happy-people"
+                      alt="avatar"
+                      class="rounded-circle ms-2"
+                      style="width: 28px; height: 28px; object-fit: cover"
+                    />
+                  </div>
+                  <!-- message -->
+                  <p class="bg-primary-subtle p-2 rounded">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- footer -->
+          <div class="modal-footer border-0 p-0 m-0">
+            <div class="d-flex">
+              <!-- icons -->
+              <div class="d-flex align-items-center">
+                <i
+                  class="fas fa-plus-circle mx-1 fs-5 text-muted"
+                  type="button"
+                ></i>
+                <i
+                  class="fas fa-file-image mx-1 fs-5 text-muted"
+                  type="button"
+                ></i>
+                <i class="fas fa-adjust mx-1 fs-5 text-muted" type="button"></i>
+                <i
+                  class="fa-solid fa-gif mx-1 fs-5 text-muted"
+                  type="button"
+                ></i>
+              </div>
+              <!-- input -->
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control rounded border-0 bg-gray"
+                  placeholder="Aa"
+                  aria-label="Aa"
+                  aria-describedby="chatInputForm"
+                />
+                <span class="input-group-text" id="chatInputForm"
+                  ><i class="fa-solid fa-face-smile fs-5 text-muted"></i
+                ></span>
+              </div>
+              <!-- send icon -->
+              <div class="d-flex align-items-center mx-2">
+                <i class="fas fa-thumbs-up fs-5 text-muted" type="button"></i>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

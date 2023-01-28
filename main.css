@@ -53,6 +53,18 @@ input:focus::placeholder {
   .dropdown-menu__main-menu {
     width: 20em !important;
   }
+  /* chat box */
+  .dropdown-menu__chat {
+    position: fixed !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    max-height: 100vh !important;
+    transform: translate(0) !important;
+    z-index: 10 !important;
+  }
 }
 
 @media (min-width: 992px) {
